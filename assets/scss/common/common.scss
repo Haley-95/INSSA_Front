@@ -33,9 +33,14 @@ $flex-map: (
 
 // color
 $orange10: #FF7A00;
-$orange08: #FF8F27;
-$orange16: #FFA14B;
-$orange38: #FFCC9E;
+$orange09: #FF8F27;
+$orange08: #FFA14B;
+$orange07: #FFCC9E;
+$orange06: #FFE9D4;
+$orange05: #FFF0E3;
+$orange04: #FFF7EF;
+$orange03: #FFF9F4;
+$orange02: #FFFCFA;
 
 $gray90: #FFFFFF;
 $gray100: #F5F5F5;
@@ -62,62 +67,89 @@ $bold : 700;
 $medium : 500;
 $regular : 400;
 
-$h1-size: 36px;
-$h1-height: 48px;
+$letter-spacing: -0.02em;
 
-$h2-size: 32px;
+$h1-size: 40px;
+$h1-height: 52px;
+
+$h2-size: 36px;
 $h2-height: 44px;
 
-$h3-size: 26px;
+$h3-size: 32px;
 $h3-height: 40px;
 
-$h4-size: 20px;
-$h4-height: 30px;
+$h4-size: 28px;
+$h4-height: 36px;
 
-$txt1-size: 18px;
-$txt1-height: 28px;
+$txt1-size: 20px;
+$txt1-height: 30px;
 
-$txt2-size: 16px;
-$txt2-height: 24px;
+$txt2-size: 18px;
+$txt2-height: 28px;
 
-$txt3-size: 12px;
+$txt3-size: 16px;
 $txt3-height: 20px;
+
+$txt4-size: 14px;
+$txt4-height: 18px;
+
+$txt5-size: 12px;
+$txt5-height: 16px;
 
 @mixin h1 {
     font-size: $h1-size;
     font-weight: $extrabold;
+    letter-spacing: $letter-spacing;
     line-height: $h1-height;
 }
 
 @mixin h2 {
     font-size: $h2-size;
     font-weight: $extrabold;
+    letter-spacing: $letter-spacing;
     line-height: $h2-height;
 }
 
 @mixin h3 {
     font-size: $h3-size;
+    letter-spacing: $letter-spacing;
     line-height: $h3-height;
 }
 
 @mixin h4 {
     font-size: $h4-size;
+    letter-spacing: $letter-spacing;
     line-height: $h4-height;
 }
 
 @mixin txt1 {
     font-size: $txt1-size;
+    letter-spacing: $letter-spacing;
     line-height: $txt1-height;
 }
 
 @mixin txt2 {
     font-size: $txt2-size;
+    letter-spacing: $letter-spacing;
     line-height: $txt2-height;
 }
 
 @mixin txt3 {
     font-size: $txt3-size;
+    letter-spacing: $letter-spacing;
     line-height: $txt3-height;
+}
+
+@mixin txt4 {
+    font-size: $txt4-size;
+    letter-spacing: $letter-spacing;
+    line-height: $txt4-height;
+}
+
+@mixin txt5 {
+    font-size: $txt5-size;
+    letter-spacing: $letter-spacing;
+    line-height: $txt5-height;
 }
 
 .h1 {
@@ -148,99 +180,139 @@ $txt3-height: 20px;
     @include txt3;
 }
 
+.txt4 {
+    @include txt4;
+}
+
+.txt5 {
+    @include txt5;
+}
+
 // btn
-.btn_basic_s {
-    @include h3;
-    padding: 8px 24px;
-    font-weight: 700;
-    background-color: $orange10;
-    color: $gray90;
-    border-radius: 4px;
-    transition: background-color 0.25s ease-in-out;
-
-    &:hover {
-        background-color: $orange08;
-    }
-
-    &:active {
-        background-color: $orange16;
-    }
-
-    &.disabled {
-        cursor: default;
-        background-color: $orange38;
-    }
-}
-
-.btn_basic_m {
-    @include h2;
-    padding: 8px 24px;
-    background-color: $orange10;
-    color: $gray90;
-    border-radius: 4px;
-    transition: background-color 0.25s ease-in-out;
-
-    &:hover {
-        background-color: $orange08;
-    }
-
-    &:active {
-        background-color: $orange16;
-    }
-
-    &.disabled {
-        cursor: default;
-        background-color: $orange38;
-    }
-}
-
-.btn_basic_l {
-    @include h3;
+.btn_s {
+    @include txt1;
+    padding: 5px 22px;
     font-weight: $bold;
-    padding: 19.49px 225px;
     background-color: $orange10;
     color: $gray90;
     border-radius: 4px;
-    transition: background-color 0.25s ease-in-out;
+    transition: all 0.35s ease-in-out;
+
+    &.outlined1, &.outlined2 {
+        padding: 3px 22px;
+    }
 
     &:hover {
-        background-color: $orange08;
+        background-color: $orange09;
     }
 
     &:active {
-        background-color: $orange16;
+        background-color: $orange08;
     }
 
     &.disabled {
         cursor: default;
-        background-color: $orange38;
+        background-color: $orange07;
     }
 }
 
-.btn_outlined {
+.btn_m {
     @include h4;
     font-weight: $bold;
-    padding: 4px 17px;
-    background-color: $gray90;
-    border: 1px solid $orange10;
-    color: $orange10;
+    padding: 8px 24px;
+    background-color: $orange10;
+    color: $gray90;
     border-radius: 4px;
-    transition: background-color 0.5s ease-in-out;
-    
+    transition: all 0.35s ease-in-out;
+
+    &.outlined1, &.outlined2 {
+        padding: 6px 24px;
+    }
+
     &:hover {
-        background-color: $orange10;
-        color: $gray90;
+        background-color: $orange09;
     }
 
     &:active {
-        background-color: $orange16;
+        background-color: $orange08;
+    }
+
+    &.disabled {
+        cursor: default;
+        background-color: $orange07;
+    }
+}
+
+.btn_l {
+    @include h3;
+    font-weight: $bold;
+    padding: 12px 32px;
+    background-color: $orange10;
+    color: $gray90;
+    border-radius: 4px;
+    transition: all 0.35s ease-in-out;
+
+    &.outlined1, &.outlined2 {
+        padding: 10px 32px;
+    }
+
+    &:hover {
+        background-color: $orange09;
+    }
+
+    &:active {
+        background-color: $orange08;
+    }
+
+    &.disabled {
+        cursor: default;
+        background-color: $orange07;
+    }
+}
+
+.outlined1 {
+    color: $orange10;
+    border: 2px solid $orange10;
+    background-color: $gray90;
+
+    &:hover {
+        color: $gray90;
+        border-color: $orange09;
+        background-color: $orange09;
+    }
+
+    &:active {
+        color: $orange10;
+        border-color: $orange06;
+        background-color: $orange06;
     }
 
     &.disabled {
         cursor: default;
         color: $gray200;
-        border: 1px solid $gray200;
+        border-color: $gray200;
         background-color: $gray90;
+    }
+}
+
+.outlined2 {
+    color: $orange10;
+    border: 2px solid $orange10;
+    background-color: $gray90;
+
+    &:hover {
+        background-color: $orange06;
+    }
+
+    &:active {
+        background-color: $orange07;
+    }
+    
+    &.disabled {
+        cursor: default;
+        color: $gray300;
+        border-color: $gray300;
+        background-color: $gray100;
     }
 }
 
@@ -253,7 +325,7 @@ $txt3-height: 20px;
     background-color: $orange10;
     color: $gray90;
     border-radius: 4px;
-    transition: background-color 0.25s ease-in-out;
+    transition: background-color 0.35s ease-in-out;
 
     img {
         display: block;
@@ -263,16 +335,16 @@ $txt3-height: 20px;
     }
 
     &:hover {
-        background-color: $orange08;
+        background-color: $orange09;
     }
 
     &:active {
-        background-color: $orange16;
+        background-color: $orange08;
     }
 
     &.disabled {
         cursor: default;
-        background-color: $orange38;
+        background-color: $orange07;
     }
 }
 
@@ -284,7 +356,7 @@ $txt3-height: 20px;
     background-color: $orange10;
     color: $gray90;
     border-radius: 4px;
-    transition: background-color 0.25s ease-in-out;
+    transition: background-color 0.35s ease-in-out;
 
     img {
         display: block;
@@ -294,16 +366,16 @@ $txt3-height: 20px;
     }
 
     &:hover {
-        background-color: $orange08;
+        background-color: $orange09;
     }
 
     &:active {
-        background-color: $orange16;
+        background-color: $orange08;
     }
 
     &.disabled {
         cursor: default;
-        background-color: $orange38;
+        background-color: $orange07;
     }
 }
 
