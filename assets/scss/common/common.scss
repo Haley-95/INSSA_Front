@@ -32,40 +32,41 @@ $flex-map: (
 }
 
 // color
-$orange10: #FF7A00;
-$orange09: #FF8F27;
-$orange08: #FFA14B;
-$orange07: #FFCC9E;
-$orange06: #FFE9D4;
-$orange05: #FFF0E3;
-$orange04: #FFF7EF;
-$orange03: #FFF9F4;
-$orange02: #FFFCFA;
+$orange10: #ff7a00;
+$orange09: #ff8f27;
+$orange08: #ffa14b;
+$orange07: #ffcc9e;
+$orange06: #ffe9d4;
+$orange05: #fff0e3;
+$orange04: #fff7ef;
+$orange03: #fff9f4;
+$orange02: #fffcfa;
 
-$gray90: #FFFFFF;
-$gray100: #F5F5F5;
-$gray200: #DEDEDE;
-$gray300: #B7B7B7;
-$gray400: #9B9B9B;
+$gray90: #ffffff;
+$gray100: #f5f5f5;
+$gray200: #dedede;
+$gray300: #b7b7b7;
+$gray400: #9b9b9b;
 $gray500: #848484;
 $gray600: #727272;
-$gray700: #5F5F5F;
+$gray700: #5f5f5f;
 $gray800: #515151;
-$gray900: #3D3D3D;
-$gray1000: #2C2C2C;
-$gray1100: #1E1E1E;
+$gray900: #3d3d3d;
+$gray1000: #2c2c2c;
+$gray1100: #1e1e1e;
 $gray1200: #111111;
 $gray1300: #000000;
 
-$error: #FF5E5E;
-$informative: #5F8BFF;
-$success: #64DE39;
+$error: #ff5e5e;
+$error-b: #fffafa;
+$informative: #5f8bff;
+$success: #64de39;
 
 // font
-$extrabold : 800;
-$bold : 700;
-$medium : 500;
-$regular : 400;
+$extrabold: 800;
+$bold: 700;
+$medium: 500;
+$regular: 400;
 
 $letter-spacing: -0.02em;
 
@@ -80,6 +81,12 @@ $h3-height: 40px;
 
 $h4-size: 28px;
 $h4-height: 36px;
+
+$h5-size: 26px;
+$h5-height: 36px;
+
+$h6-size: 24px;
+$h6-height: 34px;
 
 $txt1-size: 20px;
 $txt1-height: 30px;
@@ -120,6 +127,18 @@ $txt5-height: 16px;
     font-size: $h4-size;
     letter-spacing: $letter-spacing;
     line-height: $h4-height;
+}
+
+@mixin h5 {
+    font-size: $h5-size;
+    letter-spacing: $letter-spacing;
+    line-height: $h5-height;
+}
+
+@mixin h6 {
+    font-size: $h6-size;
+    letter-spacing: $letter-spacing;
+    line-height: $h6-height;
 }
 
 @mixin txt1 {
@@ -168,6 +187,14 @@ $txt5-height: 16px;
     @include h4;
 }
 
+.h5 {
+    @include h5;
+}
+
+.h6 {
+    @include h6;
+}
+
 .txt1 {
     @include txt1;
 }
@@ -198,7 +225,8 @@ $txt5-height: 16px;
     border-radius: 4px;
     transition: all 0.35s ease-in-out;
 
-    &.outlined1, &.outlined2 {
+    &.outlined1,
+    &.outlined2 {
         padding: 3px 22px;
     }
 
@@ -225,7 +253,8 @@ $txt5-height: 16px;
     border-radius: 4px;
     transition: all 0.35s ease-in-out;
 
-    &.outlined1, &.outlined2 {
+    &.outlined1,
+    &.outlined2 {
         padding: 6px 24px;
     }
 
@@ -252,8 +281,147 @@ $txt5-height: 16px;
     border-radius: 4px;
     transition: all 0.35s ease-in-out;
 
-    &.outlined1, &.outlined2 {
+    &.outlined1,
+    &.outlined2 {
         padding: 10px 32px;
+    }
+
+    &:hover {
+        background-color: $orange09;
+    }
+
+    &:active {
+        background-color: $orange08;
+    }
+
+    &.disabled {
+        cursor: default;
+        background-color: $orange07;
+    }
+}
+
+.btn_icon_s {
+    @include txt1;
+    display: inline-flex;
+    align-items: center;
+    font-weight: $bold;
+    padding: 5px 20px 5px 12px;
+    background-color: $orange10;
+    color: $gray90;
+    border-radius: 4px;
+    transition: all 0.35s ease-in-out;
+
+    span {
+        display: block;
+        width: 24px;
+        height: 24px;
+        margin-right: 12px;
+        background: url('/assets/images/common/icon24/caret-left.png') no-repeat;
+        transition: all 0.35s ease-in-out;
+    }
+
+    &.outlined1 {
+        span {
+            background: url('/assets/images/common/icon24/orange-caret-left.png') no-repeat;
+        }
+
+        &.disabled {
+            span {
+                background: url('/assets/images/common/icon24/gray-caret-left.png') no-repeat;
+            }
+        }
+    }
+
+    &:hover {
+        background-color: $orange09;
+    }
+
+    &:active {
+        background-color: $orange08;
+    }
+
+    &.disabled {
+        cursor: default;
+        background-color: $orange07;
+    }
+}
+
+.btn_icon_m {
+    @include h4;
+    font-weight: $bold;
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 24px 8px 12px;
+    background-color: $orange10;
+    color: $gray90;
+    border-radius: 4px;
+    transition: all 0.35s ease-in-out;
+
+    span {
+        display: block;
+        width: 32px;
+        height: 32px;
+        margin-right: 20px;
+        background: url('/assets/images/common/icon32/caret-left.png') no-repeat;
+        transition: all 0.35s ease-in-out;
+    }
+
+    &.outlined1 {
+        span {
+            background: url('/assets/images/common/icon32/orange-caret-left.png') no-repeat;
+        }
+
+        &.disabled {
+            span {
+                background: url('/assets/images/common/icon32/gray-caret-left.png') no-repeat;
+            }
+        }
+    }
+
+    &:hover {
+        background-color: $orange09;
+    }
+
+    &:active {
+        background-color: $orange08;
+    }
+
+    &.disabled {
+        cursor: default;
+        background-color: $orange07;
+    }
+}
+
+.btn_icon_l {
+    @include h3;
+    font-weight: $bold;
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 32px 12px 20px;
+    background-color: $orange10;
+    color: $gray90;
+    border-radius: 4px;
+    transition: all 0.35s ease-in-out;
+
+    span {
+        display: block;
+        width: 32px;
+        height: 32px;
+        margin-right: 28px;
+        background: url('/assets/images/common/icon32/caret-left.png') no-repeat;
+        transition: all 0.35s ease-in-out;
+    }
+
+    &.outlined1 {
+        span {
+            background: url('/assets/images/common/icon32/orange-caret-left.png') no-repeat;
+        }
+
+        &.disabled {
+            span {
+                background: url('/assets/images/common/icon32/gray-caret-left.png') no-repeat;
+            }
+        }
     }
 
     &:hover {
@@ -307,7 +475,7 @@ $txt5-height: 16px;
     &:active {
         background-color: $orange07;
     }
-    
+
     &.disabled {
         cursor: default;
         color: $gray300;
@@ -316,72 +484,27 @@ $txt5-height: 16px;
     }
 }
 
-.btn_icon_s {
-    @include h3;
-    display: inline-flex;
-    align-items: center;
-    font-weight: $bold;
-    padding: 8px 24px;
-    background-color: $orange10;
-    color: $gray90;
-    border-radius: 4px;
-    transition: background-color 0.35s ease-in-out;
-
-    img {
-        display: block;
-        width: 32px;
-        height: 32px;
-        margin-right: 16px;
-    }
+.ghost {
+    color: $orange10;
+    background-color: $gray90;
 
     &:hover {
-        background-color: $orange09;
+        background-color: $orange04;
     }
 
     &:active {
-        background-color: $orange08;
+        background-color: $orange06;
     }
 
     &.disabled {
         cursor: default;
-        background-color: $orange07;
-    }
-}
-
-.btn_icon_m {
-    @include h2;
-    display: inline-flex;
-    align-items: center;
-    padding: 8px 24px;
-    background-color: $orange10;
-    color: $gray90;
-    border-radius: 4px;
-    transition: background-color 0.35s ease-in-out;
-
-    img {
-        display: block;
-        width: 32px;
-        height: 32px;
-        margin-right: 16px;
-    }
-
-    &:hover {
-        background-color: $orange09;
-    }
-
-    &:active {
-        background-color: $orange08;
-    }
-
-    &.disabled {
-        cursor: default;
-        background-color: $orange07;
+        color: $gray300;
+        background-color: $gray90;
     }
 }
 
 // form
 form {
     input {
-        
     }
 }
