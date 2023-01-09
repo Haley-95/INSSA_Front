@@ -132,12 +132,40 @@
     width: 24px;
     height: 24px;
     margin-right: 12px;
-    background: url("/assets/images/common/icon24/caret-left.png") no-repeat;
+    background: url("/assets/images/common/caret-left.png") no-repeat;
+    background-size: cover;
     transition: all 0.35s ease-in-out; }
   .btn_icon_s.outlined1 span {
-    background: url("/assets/images/common/icon24/orange-caret-left.png") no-repeat; }
+    background: url("/assets/images/common/orange-caret-left.png") no-repeat;
+    background-size: cover; }
+    .btn_icon_s.outlined1 span::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: url("/assets/images/common/caret-left.png") no-repeat;
+      background-size: cover;
+      transition: all 0.35s ease-in-out;
+      opacity: 0; }
+  .btn_icon_s.outlined1:hover span::after {
+    opacity: 1; }
+  .btn_icon_s.outlined1:active span::after {
+    opacity: 0; }
   .btn_icon_s.outlined1.disabled span {
-    background: url("/assets/images/common/icon24/gray-caret-left.png") no-repeat; }
+    background: url("/assets/images/common/gray200-caret-left.png") no-repeat;
+    background-size: cover; }
+  .btn_icon_s.outlined2 span {
+    background: url("/assets/images/common/orange-caret-left.png") no-repeat;
+    background-size: cover; }
+  .btn_icon_s.outlined2.disabled span {
+    background: url("/assets/images/common/gray300-caret-left.png") no-repeat;
+    background-size: cover; }
+  .btn_icon_s.ghost span {
+    background: url("/assets/images/common/orange-caret-left.png") no-repeat;
+    background-size: cover; }
+  .btn_icon_s.ghost.disabled span {
+    background: url("/assets/images/common/gray300-caret-left.png") no-repeat;
+    background-size: cover; }
   .btn_icon_s:hover {
     background-color: #ff8f27; }
   .btn_icon_s:active {
@@ -163,12 +191,40 @@
     width: 32px;
     height: 32px;
     margin-right: 20px;
-    background: url("/assets/images/common/icon32/caret-left.png") no-repeat;
+    background: url("/assets/images/common/caret-left.png") no-repeat;
+    background-size: cover;
     transition: all 0.35s ease-in-out; }
   .btn_icon_m.outlined1 span {
-    background: url("/assets/images/common/icon32/orange-caret-left.png") no-repeat; }
+    background: url("/assets/images/common/orange-caret-left.png") no-repeat;
+    background-size: cover; }
+    .btn_icon_m.outlined1 span::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: url("/assets/images/common/caret-left.png") no-repeat;
+      background-size: cover;
+      transition: all 0.35s ease-in-out;
+      opacity: 0; }
+  .btn_icon_m.outlined1:hover span::after {
+    opacity: 1; }
+  .btn_icon_m.outlined1:active span::after {
+    opacity: 0; }
   .btn_icon_m.outlined1.disabled span {
-    background: url("/assets/images/common/icon32/gray-caret-left.png") no-repeat; }
+    background: url("/assets/images/common/gray200-caret-left.png") no-repeat;
+    background-size: cover; }
+  .btn_icon_m.outlined2 span {
+    background: url("/assets/images/common/orange-caret-left.png") no-repeat;
+    background-size: cover; }
+  .btn_icon_m.outlined2.disabled span {
+    background: url("/assets/images/common/gray300-caret-left.png") no-repeat;
+    background-size: cover; }
+  .btn_icon_m.ghost span {
+    background: url("/assets/images/common/orange-caret-left.png") no-repeat;
+    background-size: cover; }
+  .btn_icon_m.ghost.disabled span {
+    background: url("/assets/images/common/gray300-caret-left.png") no-repeat;
+    background-size: cover; }
   .btn_icon_m:hover {
     background-color: #ff8f27; }
   .btn_icon_m:active {
@@ -194,12 +250,40 @@
     width: 32px;
     height: 32px;
     margin-right: 28px;
-    background: url("/assets/images/common/icon32/caret-left.png") no-repeat;
+    background: url("/assets/images/common/caret-left.png") no-repeat;
+    background-size: cover;
     transition: all 0.35s ease-in-out; }
   .btn_icon_l.outlined1 span {
-    background: url("/assets/images/common/icon32/orange-caret-left.png") no-repeat; }
+    background: url("/assets/images/common/orange-caret-left.png") no-repeat;
+    background-size: cover; }
+    .btn_icon_l.outlined1 span::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: url("/assets/images/common/caret-left.png") no-repeat;
+      background-size: cover;
+      transition: all 0.35s ease-in-out;
+      opacity: 0; }
+  .btn_icon_l.outlined1:hover span::after {
+    opacity: 1; }
+  .btn_icon_l.outlined1:active span::after {
+    opacity: 0; }
   .btn_icon_l.outlined1.disabled span {
-    background: url("/assets/images/common/icon32/gray-caret-left.png") no-repeat; }
+    background: url("/assets/images/common/gray200-caret-left.png") no-repeat;
+    background-size: cover; }
+  .btn_icon_l.outlined2 span {
+    background: url("/assets/images/common/orange-caret-left.png") no-repeat;
+    background-size: cover; }
+  .btn_icon_l.outlined2.disabled span {
+    background: url("/assets/images/common/gray300-caret-left.png") no-repeat;
+    background-size: cover; }
+  .btn_icon_l.ghost span {
+    background: url("/assets/images/common/orange-caret-left.png") no-repeat;
+    background-size: cover; }
+  .btn_icon_l.ghost.disabled span {
+    background: url("/assets/images/common/gray300-caret-left.png") no-repeat;
+    background-size: cover; }
   .btn_icon_l:hover {
     background-color: #ff8f27; }
   .btn_icon_l:active {
@@ -251,5 +335,58 @@
     cursor: default;
     color: #b7b7b7;
     background-color: #ffffff; }
+
+.join_btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ff7a00;
+  border-radius: 3px;
+  padding: 12px 36px;
+  background-color: #ffffff;
+  transition: all 0.35s ease-in-out; }
+  .join_btn span {
+    display: block;
+    width: 38px;
+    height: 38px;
+    background-size: cover;
+    transition: all 0.35s ease-in-out; }
+    .join_btn span::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: url("/assets/images/common/white-user.png") no-repeat;
+      background-size: cover;
+      transition: all 0.35s ease-in-out;
+      opacity: 0; }
+  .join_btn p {
+    transition: all 0.35s ease-in-out; }
+  .join_btn p:nth-of-type(1) {
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    line-height: 28px;
+    color: #515151;
+    padding-top: 8px; }
+  .join_btn p:nth-of-type(2) {
+    font-size: 20px;
+    letter-spacing: -0.02em;
+    line-height: 30px;
+    font-weight: 700;
+    color: #ff7a00; }
+  .join_btn.inssa span {
+    background: url("/assets/images/common/user.png") no-repeat;
+    background-size: cover; }
+  .join_btn.inssa:hover, .join_btn.inssa:active {
+    background-color: #ff8f27;
+    border-color: #ff8f27; }
+    .join_btn.inssa:hover span::after, .join_btn.inssa:active span::after {
+      opacity: 1; }
+    .join_btn.inssa:hover p, .join_btn.inssa:active p {
+      color: #ffffff; }
+  .join_btn.inssa:active {
+    background-color: #ffa14b;
+    border-color: #ffa14b; }
 
 /*# sourceMappingURL=common.css.map */

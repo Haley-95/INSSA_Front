@@ -316,18 +316,76 @@ $txt5-height: 16px;
         width: 24px;
         height: 24px;
         margin-right: 12px;
-        background: url('/assets/images/common/icon24/caret-left.png') no-repeat;
+        background: url('/assets/images/common/caret-left.png') no-repeat;
+        background-size: cover;
         transition: all 0.35s ease-in-out;
     }
 
     &.outlined1 {
         span {
-            background: url('/assets/images/common/icon24/orange-caret-left.png') no-repeat;
+            background: url('/assets/images/common/orange-caret-left.png') no-repeat;
+            background-size: cover;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 100%;
+                background: url('/assets/images/common/caret-left.png') no-repeat;
+                background-size: cover;
+                transition: all 0.35s ease-in-out;
+                opacity: 0;
+            }
+        }
+
+        &:hover {
+            span {
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+
+        &:active {
+            span {
+                &::after {
+                    opacity: 0;
+                }
+            }
         }
 
         &.disabled {
             span {
-                background: url('/assets/images/common/icon24/gray-caret-left.png') no-repeat;
+                background: url('/assets/images/common/gray200-caret-left.png') no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+
+    &.outlined2 {
+        span {
+            background: url('/assets/images/common/orange-caret-left.png') no-repeat;
+            background-size: cover;
+        }
+
+        &.disabled {
+            span {
+                background: url('/assets/images/common/gray300-caret-left.png') no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+
+    &.ghost {
+        span {
+            background: url('/assets/images/common/orange-caret-left.png') no-repeat;
+            background-size: cover;
+        }
+
+        &.disabled {
+            span {
+                background: url('/assets/images/common/gray300-caret-left.png') no-repeat;
+                background-size: cover;
             }
         }
     }
@@ -362,18 +420,76 @@ $txt5-height: 16px;
         width: 32px;
         height: 32px;
         margin-right: 20px;
-        background: url('/assets/images/common/icon32/caret-left.png') no-repeat;
+        background: url('/assets/images/common/caret-left.png') no-repeat;
+        background-size: cover;
         transition: all 0.35s ease-in-out;
     }
 
     &.outlined1 {
         span {
-            background: url('/assets/images/common/icon32/orange-caret-left.png') no-repeat;
+            background: url('/assets/images/common/orange-caret-left.png') no-repeat;
+            background-size: cover;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 100%;
+                background: url('/assets/images/common/caret-left.png') no-repeat;
+                background-size: cover;
+                transition: all 0.35s ease-in-out;
+                opacity: 0;
+            }
+        }
+
+        &:hover {
+            span {
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+
+        &:active {
+            span {
+                &::after {
+                    opacity: 0;
+                }
+            }
         }
 
         &.disabled {
             span {
-                background: url('/assets/images/common/icon32/gray-caret-left.png') no-repeat;
+                background: url('/assets/images/common/gray200-caret-left.png') no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+
+    &.outlined2 {
+        span {
+            background: url('/assets/images/common/orange-caret-left.png') no-repeat;
+            background-size: cover;
+        }
+
+        &.disabled {
+            span {
+                background: url('/assets/images/common/gray300-caret-left.png') no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+
+    &.ghost {
+        span {
+            background: url('/assets/images/common/orange-caret-left.png') no-repeat;
+            background-size: cover;
+        }
+
+        &.disabled {
+            span {
+                background: url('/assets/images/common/gray300-caret-left.png') no-repeat;
+                background-size: cover;
             }
         }
     }
@@ -408,18 +524,76 @@ $txt5-height: 16px;
         width: 32px;
         height: 32px;
         margin-right: 28px;
-        background: url('/assets/images/common/icon32/caret-left.png') no-repeat;
+        background: url('/assets/images/common/caret-left.png') no-repeat;
+        background-size: cover;
         transition: all 0.35s ease-in-out;
     }
 
     &.outlined1 {
         span {
-            background: url('/assets/images/common/icon32/orange-caret-left.png') no-repeat;
+            background: url('/assets/images/common/orange-caret-left.png') no-repeat;
+            background-size: cover;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 100%;
+                background: url('/assets/images/common/caret-left.png') no-repeat;
+                background-size: cover;
+                transition: all 0.35s ease-in-out;
+                opacity: 0;
+            }
+        }
+
+        &:hover {
+            span {
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+
+        &:active {
+            span {
+                &::after {
+                    opacity: 0;
+                }
+            }
         }
 
         &.disabled {
             span {
-                background: url('/assets/images/common/icon32/gray-caret-left.png') no-repeat;
+                background: url('/assets/images/common/gray200-caret-left.png') no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+
+    &.outlined2 {
+        span {
+            background: url('/assets/images/common/orange-caret-left.png') no-repeat;
+            background-size: cover;
+        }
+
+        &.disabled {
+            span {
+                background: url('/assets/images/common/gray300-caret-left.png') no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+
+    &.ghost {
+        span {
+            background: url('/assets/images/common/orange-caret-left.png') no-repeat;
+            background-size: cover;
+        }
+
+        &.disabled {
+            span {
+                background: url('/assets/images/common/gray300-caret-left.png') no-repeat;
+                background-size: cover;
             }
         }
     }
@@ -500,6 +674,81 @@ $txt5-height: 16px;
         cursor: default;
         color: $gray300;
         background-color: $gray90;
+    }
+}
+
+.join_btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $orange10;
+    border-radius: 3px;
+    padding: 12px 36px;
+    background-color: $gray90;
+    transition: all 0.35s ease-in-out;
+
+    span {
+        display: block;
+        width: 38px;
+        height: 38px;
+        background-size: cover;
+        transition: all 0.35s ease-in-out;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: url('/assets/images/common/white-user.png') no-repeat;
+            background-size: cover;
+            transition: all 0.35s ease-in-out;
+            opacity: 0;
+        }
+    }
+
+    p {
+        transition: all 0.35s ease-in-out;
+    }
+
+    p:nth-of-type(1) {
+        @include txt2;
+        color: $gray800;
+        padding-top: 8px;
+    }
+
+    p:nth-of-type(2) {
+        @include txt1;
+        font-weight: $bold;
+        color: $orange10;
+    }
+
+    &.inssa {
+        span {
+            background: url('/assets/images/common/user.png') no-repeat;
+            background-size: cover;
+        }
+
+        &:hover,
+        &:active {
+            background-color: $orange09;
+            border-color: $orange09;
+
+            span {
+                &::after {
+                    opacity: 1;
+                }
+            }
+
+            p {
+                color: $gray90;
+            }
+        }
+
+        &:active {
+            background-color: $orange08;
+            border-color: $orange08;
+        }
     }
 }
 
