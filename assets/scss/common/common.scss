@@ -31,6 +31,11 @@ $flex-map: (
     align-items: _get-flex-value($ai);
 }
 
+// common transition
+@mixin transition() {
+    transition: all 0.35s ease-in-out;
+}
+
 // color
 $orange10: #ff7a00;
 $orange09: #ff8f27;
@@ -218,12 +223,12 @@ $txt5-height: 16px;
 // btn
 .btn_s {
     @include txt1;
+    @include transition();
     padding: 5px 22px;
     font-weight: $bold;
     background-color: $orange10;
     color: $gray90;
     border-radius: 4px;
-    transition: all 0.35s ease-in-out;
 
     &.outlined1,
     &.outlined2 {
@@ -246,12 +251,12 @@ $txt5-height: 16px;
 
 .btn_m {
     @include h4;
+    @include transition();
     font-weight: $bold;
     padding: 8px 24px;
     background-color: $orange10;
     color: $gray90;
     border-radius: 4px;
-    transition: all 0.35s ease-in-out;
 
     &.outlined1,
     &.outlined2 {
@@ -274,12 +279,12 @@ $txt5-height: 16px;
 
 .btn_l {
     @include h3;
+    @include transition();
     font-weight: $bold;
     padding: 12px 32px;
     background-color: $orange10;
     color: $gray90;
     border-radius: 4px;
-    transition: all 0.35s ease-in-out;
 
     &.outlined1,
     &.outlined2 {
@@ -302,38 +307,36 @@ $txt5-height: 16px;
 
 .btn_icon_s {
     @include txt1;
-    display: inline-flex;
-    align-items: center;
+    @include inline-flexbox();
+    @include transition();
     font-weight: $bold;
     padding: 5px 20px 5px 12px;
     background-color: $orange10;
     color: $gray90;
     border-radius: 4px;
-    transition: all 0.35s ease-in-out;
 
     span {
         display: block;
         width: 24px;
         height: 24px;
         margin-right: 12px;
-        background: url('/assets/images/common/caret-left.png') no-repeat;
+        background-image: url('/assets/images/common/caret-left.png');
         background-size: cover;
-        transition: all 0.35s ease-in-out;
+        @include transition();
     }
 
     &.outlined1 {
         span {
-            background: url('/assets/images/common/orange-caret-left.png') no-repeat;
-            background-size: cover;
+            background-image: url('/assets/images/common/orange-caret-left.png');
 
             &::after {
                 content: '';
                 display: block;
                 width: 100%;
                 height: 100%;
-                background: url('/assets/images/common/caret-left.png') no-repeat;
+                background-image: url('/assets/images/common/caret-left.png');
                 background-size: cover;
-                transition: all 0.35s ease-in-out;
+                @include transition();
                 opacity: 0;
             }
         }
@@ -356,36 +359,31 @@ $txt5-height: 16px;
 
         &.disabled {
             span {
-                background: url('/assets/images/common/gray200-caret-left.png') no-repeat;
-                background-size: cover;
+                background-image: url('/assets/images/common/gray200-caret-left.png');
             }
         }
     }
 
     &.outlined2 {
         span {
-            background: url('/assets/images/common/orange-caret-left.png') no-repeat;
-            background-size: cover;
+            background-image: url('/assets/images/common/orange-caret-left.png');
         }
 
         &.disabled {
             span {
-                background: url('/assets/images/common/gray300-caret-left.png') no-repeat;
-                background-size: cover;
+                background-image: url('/assets/images/common/gray300-caret-left.png');
             }
         }
     }
 
     &.ghost {
         span {
-            background: url('/assets/images/common/orange-caret-left.png') no-repeat;
-            background-size: cover;
+            background-image: url('/assets/images/common/orange-caret-left.png');
         }
 
         &.disabled {
             span {
-                background: url('/assets/images/common/gray300-caret-left.png') no-repeat;
-                background-size: cover;
+                background-image: url('/assets/images/common/gray300-caret-left.png');
             }
         }
     }
@@ -406,38 +404,36 @@ $txt5-height: 16px;
 
 .btn_icon_m {
     @include h4;
+    @include inline-flexbox();
+    @include transition();
     font-weight: $bold;
-    display: inline-flex;
-    align-items: center;
     padding: 8px 24px 8px 12px;
     background-color: $orange10;
     color: $gray90;
     border-radius: 4px;
-    transition: all 0.35s ease-in-out;
 
     span {
         display: block;
         width: 32px;
         height: 32px;
         margin-right: 20px;
-        background: url('/assets/images/common/caret-left.png') no-repeat;
+        background-image: url('/assets/images/common/caret-left.png');
         background-size: cover;
-        transition: all 0.35s ease-in-out;
+        @include transition();
     }
 
     &.outlined1 {
         span {
-            background: url('/assets/images/common/orange-caret-left.png') no-repeat;
-            background-size: cover;
+            background-image: url('/assets/images/common/orange-caret-left.png');
 
             &::after {
                 content: '';
                 display: block;
                 width: 100%;
                 height: 100%;
-                background: url('/assets/images/common/caret-left.png') no-repeat;
+                background-image: url('/assets/images/common/caret-left.png');
                 background-size: cover;
-                transition: all 0.35s ease-in-out;
+                @include transition();
                 opacity: 0;
             }
         }
@@ -460,36 +456,31 @@ $txt5-height: 16px;
 
         &.disabled {
             span {
-                background: url('/assets/images/common/gray200-caret-left.png') no-repeat;
-                background-size: cover;
+                background-image: url('/assets/images/common/gray200-caret-left.png');
             }
         }
     }
 
     &.outlined2 {
         span {
-            background: url('/assets/images/common/orange-caret-left.png') no-repeat;
-            background-size: cover;
+            background-image: url('/assets/images/common/orange-caret-left.png');
         }
 
         &.disabled {
             span {
-                background: url('/assets/images/common/gray300-caret-left.png') no-repeat;
-                background-size: cover;
+                background-image: url('/assets/images/common/gray300-caret-left.png');
             }
         }
     }
 
     &.ghost {
         span {
-            background: url('/assets/images/common/orange-caret-left.png') no-repeat;
-            background-size: cover;
+            background-image: url('/assets/images/common/orange-caret-left.png');
         }
 
         &.disabled {
             span {
-                background: url('/assets/images/common/gray300-caret-left.png') no-repeat;
-                background-size: cover;
+                background-image: url('/assets/images/common/gray300-caret-left.png');
             }
         }
     }
@@ -510,38 +501,36 @@ $txt5-height: 16px;
 
 .btn_icon_l {
     @include h3;
+    @include inline-flexbox();
+    @include transition();
     font-weight: $bold;
-    display: inline-flex;
-    align-items: center;
     padding: 12px 32px 12px 20px;
     background-color: $orange10;
     color: $gray90;
     border-radius: 4px;
-    transition: all 0.35s ease-in-out;
 
     span {
         display: block;
         width: 32px;
         height: 32px;
         margin-right: 28px;
-        background: url('/assets/images/common/caret-left.png') no-repeat;
+        background-image: url('/assets/images/common/caret-left.png');
         background-size: cover;
-        transition: all 0.35s ease-in-out;
+        @include transition();
     }
 
     &.outlined1 {
         span {
-            background: url('/assets/images/common/orange-caret-left.png') no-repeat;
-            background-size: cover;
+            background-image: url('/assets/images/common/orange-caret-left.png');
 
             &::after {
                 content: '';
                 display: block;
                 width: 100%;
                 height: 100%;
-                background: url('/assets/images/common/caret-left.png') no-repeat;
+                background-image: url('/assets/images/common/caret-left.png');
                 background-size: cover;
-                transition: all 0.35s ease-in-out;
+                @include transition();
                 opacity: 0;
             }
         }
@@ -564,36 +553,31 @@ $txt5-height: 16px;
 
         &.disabled {
             span {
-                background: url('/assets/images/common/gray200-caret-left.png') no-repeat;
-                background-size: cover;
+                background-image: url('/assets/images/common/gray200-caret-left.png');
             }
         }
     }
 
     &.outlined2 {
         span {
-            background: url('/assets/images/common/orange-caret-left.png') no-repeat;
-            background-size: cover;
+            background-image: url('/assets/images/common/orange-caret-left.png');
         }
 
         &.disabled {
             span {
-                background: url('/assets/images/common/gray300-caret-left.png') no-repeat;
-                background-size: cover;
+                background-image: url('/assets/images/common/gray300-caret-left.png');
             }
         }
     }
 
     &.ghost {
         span {
-            background: url('/assets/images/common/orange-caret-left.png') no-repeat;
-            background-size: cover;
+            background-image: url('/assets/images/common/orange-caret-left.png');
         }
 
         &.disabled {
             span {
-                background: url('/assets/images/common/gray300-caret-left.png') no-repeat;
-                background-size: cover;
+                background-image: url('/assets/images/common/gray300-caret-left.png');
             }
         }
     }
@@ -678,37 +662,34 @@ $txt5-height: 16px;
 }
 
 .join_btn {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include column-flexbox();
+    @include transition();
+    width: 256px;
     border: 1px solid $orange10;
     border-radius: 3px;
-    padding: 12px 36px;
+    padding: 12px 0;
     background-color: $gray90;
-    transition: all 0.35s ease-in-out;
 
     span {
         display: block;
         width: 38px;
         height: 38px;
         background-size: cover;
-        transition: all 0.35s ease-in-out;
+        @include transition();
 
         &::after {
             content: '';
             display: block;
             width: 100%;
             height: 100%;
-            background: url('/assets/images/common/white-user.png') no-repeat;
-            background-size: cover;
-            transition: all 0.35s ease-in-out;
             opacity: 0;
+            background-size: cover;
+            @include transition();
         }
     }
 
     p {
-        transition: all 0.35s ease-in-out;
+        @include transition();
     }
 
     p:nth-of-type(1) {
@@ -723,31 +704,83 @@ $txt5-height: 16px;
         color: $orange10;
     }
 
+    &:hover,
+    &:active {
+        background-color: $orange09;
+        border-color: $orange09;
+
+        span {
+            &::after {
+                opacity: 1;
+            }
+        }
+
+        p {
+            color: $gray90;
+        }
+    }
+
+    &:active {
+        background-color: $orange08;
+        border-color: $orange08;
+    }
+
     &.inssa {
         span {
-            background: url('/assets/images/common/user.png') no-repeat;
-            background-size: cover;
-        }
+            background-image: url('/assets/images/common/user.png');
 
-        &:hover,
-        &:active {
-            background-color: $orange09;
-            border-color: $orange09;
-
-            span {
-                &::after {
-                    opacity: 1;
-                }
-            }
-
-            p {
-                color: $gray90;
+            &::after {
+                background-image: url('/assets/images/common/white-user.png');
             }
         }
+    }
 
-        &:active {
-            background-color: $orange08;
-            border-color: $orange08;
+    &.company {
+        span {
+            background-image: url('/assets/images/common/paint-brush-broad.png');
+
+            &::after {
+                background-image: url('/assets/images/common/white-paint-brush-broad.png');
+            }
+        }
+    }
+}
+
+.wide_btn {
+    @include h5;
+    @include flexbox();
+    @include transition();
+    font-weight: $bold;
+    width: 528px;
+    height: 80px;
+    color: $gray90;
+    background-color: $orange10;
+    border-radius: 4px;
+
+    &:hover {
+        background-color: $orange09;
+    }
+
+    &:active {
+        background-color: $orange08;
+    }
+
+    &.sns_login {
+        @include h6;
+        color: $gray300;
+        background-color: $gray100;
+    }
+
+    &.disabled {
+        cursor: default;
+
+        &.login {
+            background-color: $orange07;
+        }
+
+        &.change_pwd_url {
+            color: $gray300;
+            background-color: $gray100;
         }
     }
 }
@@ -755,5 +788,68 @@ $txt5-height: 16px;
 // form
 form {
     input {
+        &[type='checkbox'] {
+            display: none;
+        }
+
+        &[type='checkbox'] + label {
+            @include h4;
+            @include transition();
+            display: flex;
+            align-items: center;
+            width: 161px;
+            height: 24px;
+            padding-left: 34px;
+            font-weight: $regular;
+            color: $gray700;
+            background-image: url('/assets/images/common/check.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        &[type='checkbox']:checked + label {
+            background-image: url('/assets/images/common/checked.png');
+        }
+
+        // 사이즈 확정되면 교체
+        &#sessionLogin + label {
+            @include h3;
+            width: 183px;
+            height: 28px;
+            padding-left: 38px;
+        }
+
+        &[type='text'],
+        &[type='password'] {
+            @include h6;
+            border: 1px solid $gray400;
+            border-radius: 3px;
+            padding: 0 21px;
+
+            &.input_l {
+                width: 528px;
+                height: 80px;
+            }
+
+            &.input_m {
+                width: 528px;
+                height: 64px;
+            }
+
+            &.input_s {
+                width: 384px;
+                height: 64px;
+            }
+
+            &:focus {
+                border: 1px solid $gray900;
+            }
+        }
+
+        &::placeholder {
+            color: $gray400;
+        }
     }
 }

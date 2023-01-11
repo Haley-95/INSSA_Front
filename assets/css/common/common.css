@@ -59,12 +59,12 @@
   font-size: 20px;
   letter-spacing: -0.02em;
   line-height: 30px;
+  transition: all 0.35s ease-in-out;
   padding: 5px 22px;
   font-weight: 700;
   background-color: #ff7a00;
   color: #ffffff;
-  border-radius: 4px;
-  transition: all 0.35s ease-in-out; }
+  border-radius: 4px; }
   .btn_s.outlined1, .btn_s.outlined2 {
     padding: 3px 22px; }
   .btn_s:hover {
@@ -79,12 +79,12 @@
   font-size: 28px;
   letter-spacing: -0.02em;
   line-height: 36px;
+  transition: all 0.35s ease-in-out;
   font-weight: 700;
   padding: 8px 24px;
   background-color: #ff7a00;
   color: #ffffff;
-  border-radius: 4px;
-  transition: all 0.35s ease-in-out; }
+  border-radius: 4px; }
   .btn_m.outlined1, .btn_m.outlined2 {
     padding: 6px 24px; }
   .btn_m:hover {
@@ -99,12 +99,12 @@
   font-size: 32px;
   letter-spacing: -0.02em;
   line-height: 40px;
+  transition: all 0.35s ease-in-out;
   font-weight: 700;
   padding: 12px 32px;
   background-color: #ff7a00;
   color: #ffffff;
-  border-radius: 4px;
-  transition: all 0.35s ease-in-out; }
+  border-radius: 4px; }
   .btn_l.outlined1, .btn_l.outlined2 {
     padding: 10px 32px; }
   .btn_l:hover {
@@ -120,30 +120,30 @@
   letter-spacing: -0.02em;
   line-height: 30px;
   display: inline-flex;
+  justify-content: center;
   align-items: center;
+  transition: all 0.35s ease-in-out;
   font-weight: 700;
   padding: 5px 20px 5px 12px;
   background-color: #ff7a00;
   color: #ffffff;
-  border-radius: 4px;
-  transition: all 0.35s ease-in-out; }
+  border-radius: 4px; }
   .btn_icon_s span {
     display: block;
     width: 24px;
     height: 24px;
     margin-right: 12px;
-    background: url("/assets/images/common/caret-left.png") no-repeat;
+    background-image: url("/assets/images/common/caret-left.png");
     background-size: cover;
     transition: all 0.35s ease-in-out; }
   .btn_icon_s.outlined1 span {
-    background: url("/assets/images/common/orange-caret-left.png") no-repeat;
-    background-size: cover; }
+    background-image: url("/assets/images/common/orange-caret-left.png"); }
     .btn_icon_s.outlined1 span::after {
       content: '';
       display: block;
       width: 100%;
       height: 100%;
-      background: url("/assets/images/common/caret-left.png") no-repeat;
+      background-image: url("/assets/images/common/caret-left.png");
       background-size: cover;
       transition: all 0.35s ease-in-out;
       opacity: 0; }
@@ -152,20 +152,15 @@
   .btn_icon_s.outlined1:active span::after {
     opacity: 0; }
   .btn_icon_s.outlined1.disabled span {
-    background: url("/assets/images/common/gray200-caret-left.png") no-repeat;
-    background-size: cover; }
+    background-image: url("/assets/images/common/gray200-caret-left.png"); }
   .btn_icon_s.outlined2 span {
-    background: url("/assets/images/common/orange-caret-left.png") no-repeat;
-    background-size: cover; }
+    background-image: url("/assets/images/common/orange-caret-left.png"); }
   .btn_icon_s.outlined2.disabled span {
-    background: url("/assets/images/common/gray300-caret-left.png") no-repeat;
-    background-size: cover; }
+    background-image: url("/assets/images/common/gray300-caret-left.png"); }
   .btn_icon_s.ghost span {
-    background: url("/assets/images/common/orange-caret-left.png") no-repeat;
-    background-size: cover; }
+    background-image: url("/assets/images/common/orange-caret-left.png"); }
   .btn_icon_s.ghost.disabled span {
-    background: url("/assets/images/common/gray300-caret-left.png") no-repeat;
-    background-size: cover; }
+    background-image: url("/assets/images/common/gray300-caret-left.png"); }
   .btn_icon_s:hover {
     background-color: #ff8f27; }
   .btn_icon_s:active {
@@ -178,31 +173,31 @@
   font-size: 28px;
   letter-spacing: -0.02em;
   line-height: 36px;
-  font-weight: 700;
   display: inline-flex;
+  justify-content: center;
   align-items: center;
+  transition: all 0.35s ease-in-out;
+  font-weight: 700;
   padding: 8px 24px 8px 12px;
   background-color: #ff7a00;
   color: #ffffff;
-  border-radius: 4px;
-  transition: all 0.35s ease-in-out; }
+  border-radius: 4px; }
   .btn_icon_m span {
     display: block;
     width: 32px;
     height: 32px;
     margin-right: 20px;
-    background: url("/assets/images/common/caret-left.png") no-repeat;
+    background-image: url("/assets/images/common/caret-left.png");
     background-size: cover;
     transition: all 0.35s ease-in-out; }
   .btn_icon_m.outlined1 span {
-    background: url("/assets/images/common/orange-caret-left.png") no-repeat;
-    background-size: cover; }
+    background-image: url("/assets/images/common/orange-caret-left.png"); }
     .btn_icon_m.outlined1 span::after {
       content: '';
       display: block;
       width: 100%;
       height: 100%;
-      background: url("/assets/images/common/caret-left.png") no-repeat;
+      background-image: url("/assets/images/common/caret-left.png");
       background-size: cover;
       transition: all 0.35s ease-in-out;
       opacity: 0; }
@@ -211,20 +206,15 @@
   .btn_icon_m.outlined1:active span::after {
     opacity: 0; }
   .btn_icon_m.outlined1.disabled span {
-    background: url("/assets/images/common/gray200-caret-left.png") no-repeat;
-    background-size: cover; }
+    background-image: url("/assets/images/common/gray200-caret-left.png"); }
   .btn_icon_m.outlined2 span {
-    background: url("/assets/images/common/orange-caret-left.png") no-repeat;
-    background-size: cover; }
+    background-image: url("/assets/images/common/orange-caret-left.png"); }
   .btn_icon_m.outlined2.disabled span {
-    background: url("/assets/images/common/gray300-caret-left.png") no-repeat;
-    background-size: cover; }
+    background-image: url("/assets/images/common/gray300-caret-left.png"); }
   .btn_icon_m.ghost span {
-    background: url("/assets/images/common/orange-caret-left.png") no-repeat;
-    background-size: cover; }
+    background-image: url("/assets/images/common/orange-caret-left.png"); }
   .btn_icon_m.ghost.disabled span {
-    background: url("/assets/images/common/gray300-caret-left.png") no-repeat;
-    background-size: cover; }
+    background-image: url("/assets/images/common/gray300-caret-left.png"); }
   .btn_icon_m:hover {
     background-color: #ff8f27; }
   .btn_icon_m:active {
@@ -237,31 +227,31 @@
   font-size: 32px;
   letter-spacing: -0.02em;
   line-height: 40px;
-  font-weight: 700;
   display: inline-flex;
+  justify-content: center;
   align-items: center;
+  transition: all 0.35s ease-in-out;
+  font-weight: 700;
   padding: 12px 32px 12px 20px;
   background-color: #ff7a00;
   color: #ffffff;
-  border-radius: 4px;
-  transition: all 0.35s ease-in-out; }
+  border-radius: 4px; }
   .btn_icon_l span {
     display: block;
     width: 32px;
     height: 32px;
     margin-right: 28px;
-    background: url("/assets/images/common/caret-left.png") no-repeat;
+    background-image: url("/assets/images/common/caret-left.png");
     background-size: cover;
     transition: all 0.35s ease-in-out; }
   .btn_icon_l.outlined1 span {
-    background: url("/assets/images/common/orange-caret-left.png") no-repeat;
-    background-size: cover; }
+    background-image: url("/assets/images/common/orange-caret-left.png"); }
     .btn_icon_l.outlined1 span::after {
       content: '';
       display: block;
       width: 100%;
       height: 100%;
-      background: url("/assets/images/common/caret-left.png") no-repeat;
+      background-image: url("/assets/images/common/caret-left.png");
       background-size: cover;
       transition: all 0.35s ease-in-out;
       opacity: 0; }
@@ -270,20 +260,15 @@
   .btn_icon_l.outlined1:active span::after {
     opacity: 0; }
   .btn_icon_l.outlined1.disabled span {
-    background: url("/assets/images/common/gray200-caret-left.png") no-repeat;
-    background-size: cover; }
+    background-image: url("/assets/images/common/gray200-caret-left.png"); }
   .btn_icon_l.outlined2 span {
-    background: url("/assets/images/common/orange-caret-left.png") no-repeat;
-    background-size: cover; }
+    background-image: url("/assets/images/common/orange-caret-left.png"); }
   .btn_icon_l.outlined2.disabled span {
-    background: url("/assets/images/common/gray300-caret-left.png") no-repeat;
-    background-size: cover; }
+    background-image: url("/assets/images/common/gray300-caret-left.png"); }
   .btn_icon_l.ghost span {
-    background: url("/assets/images/common/orange-caret-left.png") no-repeat;
-    background-size: cover; }
+    background-image: url("/assets/images/common/orange-caret-left.png"); }
   .btn_icon_l.ghost.disabled span {
-    background: url("/assets/images/common/gray300-caret-left.png") no-repeat;
-    background-size: cover; }
+    background-image: url("/assets/images/common/gray300-caret-left.png"); }
   .btn_icon_l:hover {
     background-color: #ff8f27; }
   .btn_icon_l:active {
@@ -341,11 +326,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: all 0.35s ease-in-out;
+  width: 256px;
   border: 1px solid #ff7a00;
   border-radius: 3px;
-  padding: 12px 36px;
-  background-color: #ffffff;
-  transition: all 0.35s ease-in-out; }
+  padding: 12px 0;
+  background-color: #ffffff; }
   .join_btn span {
     display: block;
     width: 38px;
@@ -357,10 +343,9 @@
       display: block;
       width: 100%;
       height: 100%;
-      background: url("/assets/images/common/white-user.png") no-repeat;
+      opacity: 0;
       background-size: cover;
-      transition: all 0.35s ease-in-out;
-      opacity: 0; }
+      transition: all 0.35s ease-in-out; }
   .join_btn p {
     transition: all 0.35s ease-in-out; }
   .join_btn p:nth-of-type(1) {
@@ -375,18 +360,109 @@
     line-height: 30px;
     font-weight: 700;
     color: #ff7a00; }
-  .join_btn.inssa span {
-    background: url("/assets/images/common/user.png") no-repeat;
-    background-size: cover; }
-  .join_btn.inssa:hover, .join_btn.inssa:active {
+  .join_btn:hover, .join_btn:active {
     background-color: #ff8f27;
     border-color: #ff8f27; }
-    .join_btn.inssa:hover span::after, .join_btn.inssa:active span::after {
+    .join_btn:hover span::after, .join_btn:active span::after {
       opacity: 1; }
-    .join_btn.inssa:hover p, .join_btn.inssa:active p {
+    .join_btn:hover p, .join_btn:active p {
       color: #ffffff; }
-  .join_btn.inssa:active {
+  .join_btn:active {
     background-color: #ffa14b;
     border-color: #ffa14b; }
+  .join_btn.inssa span {
+    background-image: url("/assets/images/common/user.png"); }
+    .join_btn.inssa span::after {
+      background-image: url("/assets/images/common/white-user.png"); }
+  .join_btn.company span {
+    background-image: url("/assets/images/common/paint-brush-broad.png"); }
+    .join_btn.company span::after {
+      background-image: url("/assets/images/common/white-paint-brush-broad.png"); }
+
+.wide_btn {
+  font-size: 26px;
+  letter-spacing: -0.02em;
+  line-height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.35s ease-in-out;
+  font-weight: 700;
+  width: 528px;
+  height: 80px;
+  color: #ffffff;
+  background-color: #ff7a00;
+  border-radius: 4px; }
+  .wide_btn:hover {
+    background-color: #ff8f27; }
+  .wide_btn:active {
+    background-color: #ffa14b; }
+  .wide_btn.sns_login {
+    font-size: 24px;
+    letter-spacing: -0.02em;
+    line-height: 34px;
+    color: #b7b7b7;
+    background-color: #f5f5f5; }
+  .wide_btn.disabled {
+    cursor: default; }
+    .wide_btn.disabled.login {
+      background-color: #ffcc9e; }
+    .wide_btn.disabled.change_pwd_url {
+      color: #b7b7b7;
+      background-color: #f5f5f5; }
+
+form input[type='checkbox'] {
+  display: none; }
+
+form input[type='checkbox'] + label {
+  font-size: 28px;
+  letter-spacing: -0.02em;
+  line-height: 36px;
+  transition: all 0.35s ease-in-out;
+  display: flex;
+  align-items: center;
+  width: 161px;
+  height: 24px;
+  padding-left: 34px;
+  font-weight: 400;
+  color: #5f5f5f;
+  background-image: url("/assets/images/common/check.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  user-select: none; }
+
+form input[type='checkbox']:checked + label {
+  background-image: url("/assets/images/common/checked.png"); }
+
+form input#sessionLogin + label {
+  font-size: 32px;
+  letter-spacing: -0.02em;
+  line-height: 40px;
+  width: 183px;
+  height: 28px;
+  padding-left: 38px; }
+
+form input[type='text'], form input[type='password'] {
+  font-size: 24px;
+  letter-spacing: -0.02em;
+  line-height: 34px;
+  border: 1px solid #9b9b9b;
+  border-radius: 3px;
+  padding: 0 21px; }
+  form input[type='text'].input_l, form input[type='password'].input_l {
+    width: 528px;
+    height: 80px; }
+  form input[type='text'].input_m, form input[type='password'].input_m {
+    width: 528px;
+    height: 64px; }
+  form input[type='text'].input_s, form input[type='password'].input_s {
+    width: 384px;
+    height: 64px; }
+  form input[type='text']:focus, form input[type='password']:focus {
+    border: 1px solid #3d3d3d; }
+
+form input::placeholder {
+  color: #9b9b9b; }
 
 /*# sourceMappingURL=common.css.map */

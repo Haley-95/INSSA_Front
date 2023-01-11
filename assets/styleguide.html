@@ -226,32 +226,92 @@
     <br><br>
 
     <!-- join btn -->
-    <div style="display: flex; justify-content: space-between; width: 800px; border: 1px solid gray; padding: 20px;">
+    <div style="display: flex; justify-content: space-around; width: 800px; border: 1px solid gray; padding: 20px;">
         <a class="join_btn inssa" href="javascript:;">
             <span></span>
             <p>양질의 정보를 얻고 싶다면?</p>
             <p>인싸 회원가입</p>
         </a>
+        <!-- 패딩값수정 예정 -->
         <a class="join_btn company" href="javascript:;">
             <span></span>
-            <p>양질의 정보를 얻고 싶다면?</p>
-            <p>인싸 회원가입</p>
+            <p>좋은 평가를 많이 받고싶다면?</p>
+            <p>업체 회원가입</p>
         </a>
     </div>
+
+    <br><br>
+
+    <!-- wide btn -->
+    <div style="display: flex; justify-content: space-between; width: 800px; border: 1px solid gray; padding: 20px;">
+        <div>
+            <a class="wide_btn login" href="javascript:;">
+                로그인
+            </a>
+
+            <br>
+
+            <a class="wide_btn login disabled" href="javascript:;">
+                로그인
+            </a>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div style="display: flex; justify-content: space-between; width: 800px; border: 1px solid gray; padding: 20px;">
+        <div>
+            <a class="wide_btn sns_login" href="javascript:;">
+                SNS 계정 간편 로그인
+            </a>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div style="display: flex; justify-content: space-between; width: 800px; border: 1px solid gray; padding: 20px;">
+        <div>
+            <a class="wide_btn" href="javascript:;">
+                비밀번호 변경 URL 전송
+            </a>
+
+            <br>
+
+            <a class="wide_btn change_pwd_url disabled" href="javascript:;">
+                비밀번호 변경 URL 전송
+            </a>
+        </div>
+    </div>
+
+
 
     <br><br><br>
 
     <h1>form</h1> <br>
-    <form action="">
-        <input type="email" placeholder="이메일을 입력해주세요.">
-        <br>
-        <input type="password" placeholder="비밀번호를 입력해주세요.">
+    <form action="javascript:;">
+        <div
+            style="display: flex; justify-content: space-between; width: 800px; border: 1px solid gray; padding: 20px;">
+            <input type="checkbox" id="loginSession">
+            <label for="loginSession">로그인 유지</label>
+
+            <input type="checkbox" id="sessionLogin">
+            <label for="sessionLogin">로그인 유지</label>
+        </div>
+
         <br><br>
 
-        <p>비밀번호</p>
-        <input type="text">
+        <input type="text" class="input_l" placeholder="Input here">
 
-        <input type="submit">
+        <br><br>
+
+        <input type="text" class="input_m" placeholder="Input here">
+
+        <br><br>
+
+        <input type="text" class="input_s" placeholder="Input here">
+
+        <br><br>
+
     </form>
 
     <script src="js/lib/jquery.js"></script>
